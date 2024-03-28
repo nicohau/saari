@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-export default nextConfig;
+module.exports = nextConfig;
+
+const { version } = require("./package.json");
+
+module.exports = {
+	publicRuntimeConfig: {
+		version,
+	},
+};
