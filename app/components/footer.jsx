@@ -8,7 +8,7 @@ export default function Footer() {
 			<div className={style.footerWrapper}>
 				<div className={style.wordmark}>S.A.A.R.I.</div>
 				<div className={style.copyrightWrapper}>
-					<p>tacodesign</p>
+					<p>tacodesign.eu</p>
 					<div>
 						<svg>
 							<clipPath

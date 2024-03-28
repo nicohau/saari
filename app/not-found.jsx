@@ -17,7 +17,7 @@ export default function NotFound() {
 	return (
 		<main className={style.mainWrapper}>
 			<div className={style.card}>
-				<h1>404</h1>
+				<h1>KÄÄK!</h1>
 				<p>
 					Etsimääsi sivua ei löytynyt. <br />
 					Tarkista osoite ja yritä uudelleen.
