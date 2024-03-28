@@ -1,20 +1,21 @@
+require("dotenv").config();
 export const dynamic = "force-dynamic";
 
 export async function GET() {
 	var axios = require("axios");
 	var data = JSON.stringify({
 		collection: "saari-nav",
-		database: "saari",
-		dataSource: "taco-partio",
+		database: process.env.DATABASE,
+		dataSource: process.env.DATA_SOURCE,
 	});
 
 	var config = {
 		method: "post",
-		url: "https://eu-central-1.aws.data.mongodb-api.com/app/data-uhywv/endpoint/data/v1/action/find",
+		url: process.env.API_URL,
 		headers: {
 			"Content-Type": "application/json",
 			"Access-Control-Request-Headers": "*",
-			"api-key": "Kjj90lrKC9ezp7oyw9yI3PsXyAWhjtrCQod2h94ghxaFIpA9r57dE4qy2D1oqv6v",
+			"api-key": process.env.API_KEY,
 		},
 		data: data,
 	};
