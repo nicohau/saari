@@ -28,6 +28,10 @@ export default function RootLayout({ children }) {
 					content='S.A.A.R.I. on Vaasan Sinisten, Ahjopartion sekä Laihian Eräpoikien ja -tyttöjen yhteinen kesäleiri vuonna 2024.'
 				/>
 				<meta
+					name='image'
+					content='/images/cover.png'
+				/>
+				<meta
 					name='robots'
 					content='noindex,nofollow'
 				/>
