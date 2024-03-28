@@ -12,9 +12,14 @@ import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import Topper from "@/app/components/topper";
 
+const { publicRuntimeConfig } = getConfig();
+const version = publicRuntimeConfig?.version;
+
 export default function RootLayout({ children }) {
 	return (
-		<html lang='fi'>
+		<html
+			data-app-version={version}
+			lang='fi'>
 			<head>
 				<title>S.A.A.R.I. 2024</title>
 				<meta
