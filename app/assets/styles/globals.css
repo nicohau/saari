@@ -1,0 +1,73 @@
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css");
+
+:root {
+	--white: #fff;
+	--black: #181818;
+
+	--yellow-lightest: #fff0a8;
+	--yellow-lighter: #ffeb8a;
+	--yellow-light: #fce66a;
+	--yellow: #f5dd00;
+	--yellow-dark: #cab700;
+	--yellow-darker: #a09000;
+	--yellow-darkest: #756a00;
+
+	--orange-lightest: #ffcaa4;
+	--orange-lighter: #ffb886;
+	--orange-light: #fa944b;
+	--orange: #f5822a;
+	--orange-dark: #cf6f26;
+	--orange-darker: #a95c22;
+	--orange-darkest: #864a1e;
+
+	--purple-lightest: #c4a1c0;
+	--purple-lighter: #b083ab;
+	--purple-light: #884983;
+	--purple: #742a70;
+	--purple-dark: #63265f;
+	--purple-darker: #53214f;
+	--purple-darkest: #431d40;
+
+	--header-height: 7rem;
+	--footer-height: 7.5rem;
+
+	--page-maxwidth: 1200px;
+	--page-padding: 2rem;
+
+	--logoW: url("/images/logoW.png");
+	--logoB: url("/images/logoB.png");
+	--logoY: url("/images/logoY.png");
+	--logoO: url("/images/logoO.png");
+	--logoP: url("/images/logoP.png");
+}
+
+body {
+	font-size: 1rem;
+	color: var(--white);
+	background-color: var(--purple);
+	padding: 0 var(--page-padding);
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	height: var(--header-height);
+	width: 100%;
+	max-width: var(--page-maxwidth);
+	margin: 0 auto;
+}
+
+main {
+	width: 100%;
+	max-width: var(--page-maxwidth);
+	margin: 0 auto;
+	padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+	:root {
+		--page-padding: 1.25rem;
+	}
+}
