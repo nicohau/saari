@@ -1,10 +1,15 @@
+import { readFile } from "fs/promises";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-export default nextConfig;
+const packageJson = JSON.parse(await readFile(`${process.cwd()}/package.json`, "utf8"));
+const { version } = packageJson;
 
-import { version } from "./package.json";
-
-export const publicRuntimeConfig = {
-	version,
+const config = {
+	publicRuntimeConfig: {
+		version,
+	},
 };
+
+export default { ...nextConfig, ...config };
