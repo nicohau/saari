@@ -13,7 +13,7 @@ import Header from "@/app/components/header";
 import Topper from "@/app/components/topper";
 
 const { publicRuntimeConfig } = getConfig();
-const version = publicRuntimeConfig?.version;
+const version = `v${publicRuntimeConfig?.version}`;
 
 export default function RootLayout({ children }) {
 	return (
