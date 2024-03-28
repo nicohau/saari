@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 				<title>S.A.A.R.I. 2024</title>
 				<meta
 					name='description'
-					content='S.A.A.R.I. on Vaasan Sinisten sekä Ahjopartio yhteinen kesäleiri vuonna 2024.'
+					content='S.A.A.R.I. on Vaasan Sinisten, Ahjopartion sekä Laihian Eräpoikien ja -tyttöjen yhteinen kesäleiri vuonna 2024.'
 				/>
 				<meta
 					name='robots'
