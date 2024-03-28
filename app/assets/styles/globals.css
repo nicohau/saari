@@ -29,7 +29,7 @@
 	--purple-darkest: #431d40;
 
 	--header-height: 7rem;
-	--footer-height: 4rem;
+	--footer-height: 7.5rem;
 
 	--page-maxwidth: 1200px;
 	--page-padding: 2rem;
@@ -46,20 +46,23 @@ body {
 	color: var(--white);
 	background-color: var(--purple);
 	padding: 0 var(--page-padding);
+	display: flex;
+	flex-direction: column;
 }
 
 header {
 	position: sticky;
 	top: 0;
 	height: var(--header-height);
+	width: 100%;
 	max-width: var(--page-maxwidth);
 	margin: 0 auto;
 }
 
 main {
+	width: 100%;
 	max-width: var(--page-maxwidth);
 	margin: 0 auto;
-	min-height: calc(100vh - var(--header-height));
 	padding-top: 3rem;
 }
 

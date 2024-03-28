@@ -8,6 +8,7 @@ const gabarito = Gabarito({
 	variants: ["400", "600", "700", "900"],
 });
 
+import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import Topper from "@/app/components/topper";
 
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
 				<Header />
 				{children}
 				<Topper />
+				<Footer />
 			</body>
 		</html>
 	);

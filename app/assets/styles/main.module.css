@@ -1,0 +1,107 @@
+.main:empty {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main:empty::before {
+	content: "";
+	border: 0.5rem solid var(--white);
+	border-top-color: var(--yellow);
+	width: 3rem;
+	height: 3rem;
+	margin-top: 2rem;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+.main:empty::after {
+	content: "Ladataan";
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--white);
+	margin-top: 2rem;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.hero {
+	min-height: 21rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+.hero h1 {
+	width: 100%;
+	font-size: 2.5rem;
+}
+
+.hero p {
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+.kaak {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	height: calc(100vh - var(--header-height) - var(--footer-height) - 12rem);
+}
+
+.kaak h1 {
+	font-size: 9rem;
+	font-weight: 900;
+}
+
+.kaak h2 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.kaak p {
+	font-size: 1.5rem;
+	max-width: 35ch;
+	margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 15rem;
+	}
+
+	.hero h1 {
+		font-size: 2rem;
+	}
+
+	.hero p {
+		font-size: 1.2rem;
+	}
+
+	.kaak h1 {
+		font-size: 4rem;
+	}
+
+	.kaak h2 {
+		font-size: 2rem;
+	}
+
+	.kaak p {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}
