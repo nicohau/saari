@@ -1,11 +1,32 @@
+"use client";
 import style from "@/app/assets/styles/header.module.css";
+import axios from "axios";
 import Link from "next/link";
-import React from "react";
+import { useEffect, useState } from "react";
 
 import navitems from "@/app/assets/content/navitems.json";
 import MobileMenu from "@/app/components/headerMobileMenu";
 
 const Header = () => {
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		axios
+			.get("/api/navitems")
+			.then((response) => {
+				// Setting the data in priority order 0 ->
+
+				let sortedData = response.data.sort((a, b) => {
+					return a.priority - b.priority;
+				});
+
+				setData(sortedData);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}, []);
+
 	return (
 		<header className={style.headerWrapper}>
 			<Link
@@ -15,7 +36,7 @@ const Header = () => {
 				<div className={style.year}>2024</div>
 			</Link>
 			<ul className={style.navigation}>
-				{navitems.map(
+				{data.map(
 					(item, index) => (
 						<li
 							key={index}
@@ -35,7 +56,7 @@ const Header = () => {
 					0
 				)}
 			</ul>
-			<MobileMenu />
+			<MobileMenu navItems={data} />
 		</header>
 	);
 };

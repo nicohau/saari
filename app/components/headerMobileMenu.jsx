@@ -1,11 +1,11 @@
-"use client";
 import style from "@/app/assets/styles/header.module.css";
 import Link from "next/link";
 import React from "react";
 
 import navitems from "@/app/assets/content/navitems.json";
 
-export default function HeaderMobileMenu() {
+// Getting parameters
+export default function HeaderMobileMenu({ navItems }) {
 	return (
 		<>
 			<div className={style.mobileToggle}>
@@ -21,7 +21,7 @@ export default function HeaderMobileMenu() {
 					</div>
 				</label>
 				<ul className={style.navigationMobile}>
-					{navitems.map(
+					{navItems.map(
 						(item, index) => (
 							<li
 								key={index}
