@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Osallistujille",
+        "uri": "/osallistujille",
+        "external": false,
+        "isButton": false
+    },
+    {
+        "title": "Ilmoittaudu",
+        "uri": "/ilmoittaudu",
+        "external": false,
+        "isButton": true
+    }
+]
