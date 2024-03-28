@@ -12,6 +12,7 @@ import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
 import Topper from "@/app/components/topper";
 
+import getConfig from "next/config";
 const { publicRuntimeConfig } = getConfig();
 const version = `v${publicRuntimeConfig?.version}`;
 
