@@ -87,3 +87,23 @@
 		height: 20vw;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.footerWrapper {
+		color: var(--white);
+	}
+
+	.footerWrapper::after {
+		background: var(--purple-darker);
+	}
+
+	.copyrightWrapper div .svg {
+		background: var(--white);
+	}
+
+	@media (max-width: 768px) {
+		.footerWrapper {
+			background: var(--purple-darker);
+		}
+	}
+}

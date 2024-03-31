@@ -35,8 +35,13 @@ export async function GET() {
 			isButton: element.isButton,
 			priority: element.priority,
 		};
-		if (element.visibility) {
+		if (process.env.DEV === "true") {
+			obj.visibility = element.visibility;
 			data.push(obj);
+		} else {
+			if (element.visibility) {
+				data.push(obj);
+			}
 		}
 	});
 

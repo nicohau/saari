@@ -3,7 +3,6 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 1.5rem;
-	background: var(--purple);
 }
 
 .logoWrapper {
@@ -14,6 +13,7 @@
 	gap: 0.25rem;
 	position: relative;
 	height: 5rem;
+	isolation: isolate;
 }
 
 .logoWrapper::before {
@@ -27,6 +27,7 @@
 	background-position: center;
 	opacity: 0.1;
 	transition: 75ms;
+	z-index: -1;
 }
 
 .logoWrapper:hover::before {
@@ -208,6 +209,10 @@
 		height: 4rem;
 	}
 
+	.logoWrapper:hover::before {
+		opacity: 0.1;
+	}
+
 	.logo {
 		font-size: 1.35rem;
 	}
@@ -254,6 +259,7 @@
 		transform-origin: top;
 		opacity: 0;
 		pointer-events: none;
+		z-index: 9999;
 
 		@media (prefers-reduced-motion: reduce) {
 			transition: none;
@@ -280,6 +286,35 @@
 
 	.navigationMobile .navButton:hover {
 		background: var(--yellow);
+		color: var(--black);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.mobileToggle input:checked ~ label {
+		background: var(--purple);
+		color: var(--white);
+	}
+
+	.mobileToggle input:checked ~ label .menuIcon {
+		color: var(--white);
+	}
+
+	.navigationMobile {
+		background: var(--purple);
+	}
+
+	.navigationMobile .navItem a {
+		color: var(--white);
+	}
+
+	.navigationMobile .navButton {
+		color: var(--black);
+		background: var(--yellow);
+	}
+
+	.navigationMobile .navButton:hover {
+		background: var(--white);
 		color: var(--black);
 	}
 }
