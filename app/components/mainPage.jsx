@@ -32,7 +32,9 @@ export default function MainPage() {
 						{content.type === "hero" ? (
 							<div
 								className={
-									content.heroType === "kaak" ? style.kaak : style.content
+									content.heroType && content.heroType === "kaak"
+										? style.kaak
+										: style.content
 								}>
 								<h1>{content.title}</h1>
 								<h2>{content.subtitle}</h2>
