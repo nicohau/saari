@@ -34,10 +34,21 @@ export async function GET() {
 			title: element.title,
 			subtitle: element.subtitle,
 			text: element.text,
-			heroType: element.heroType,
 			ctas: element.ctas,
 		};
-		data.push(obj);
+
+		if (element.type === "hero") {
+			obj.heroType = element.heroType;
+		}
+
+		if (process.env.DEV === "true") {
+			obj.dev = element.dev;
+			data.push(obj);
+		} else {
+			if (!element.dev) {
+				data.push(obj);
+			}
+		}
 	});
 
 	// Returning the data
