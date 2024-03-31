@@ -2,8 +2,6 @@ import style from "@/app/assets/styles/header.module.css";
 import Link from "next/link";
 import React from "react";
 
-import navitems from "@/app/assets/content/navitems.json";
-
 // Getting parameters
 export default function HeaderMobileMenu({ navItems }) {
 	return (

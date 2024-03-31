@@ -1,8 +1,11 @@
-.main:empty {
+.main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 6rem;
+	padding-top: 4rem;
+	padding-bottom: 9rem;
 }
 
 .main:empty::before {
@@ -14,14 +17,6 @@
 	margin-top: 2rem;
 	border-radius: 50%;
 	animation: spin 1s linear infinite;
-}
-
-.main:empty::after {
-	content: "Ladataan";
-	font-size: 2rem;
-	font-weight: 700;
-	color: var(--white);
-	margin-top: 2rem;
 }
 
 @keyframes spin {
@@ -80,6 +75,28 @@
 	margin-top: 2rem;
 }
 
+@media (max-width: 1024px) {
+	.hero h1 {
+		font-size: 2.25rem;
+	}
+
+	.hero p {
+		font-size: 1.4rem;
+	}
+
+	.kaak h1 {
+		font-size: 8rem;
+	}
+
+	.kaak h2 {
+		font-size: 2.5rem;
+	}
+
+	.kaak p {
+		font-size: 1.4rem;
+	}
+}
+
 @media (max-width: 768px) {
 	.hero {
 		height: 15rem;
@@ -104,5 +121,107 @@
 	.kaak p {
 		font-size: 1rem;
 		font-weight: 400;
+	}
+}
+
+.contentWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	gap: 1rem;
+	width: 100%;
+}
+
+.contentWrapper h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.contentWrapper p {
+	font-size: 1.5rem;
+}
+
+.ctas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.cta {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 0.2rem solid var(--yellow);
+	border-radius: 0.5rem;
+	background-color: var(--yellow);
+	color: var(--black);
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.cta:hover {
+	background-color: var(--black);
+	color: var(--yellow);
+}
+
+ul.remarks {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	gap: 0.5rem;
+	background: var(--purple-dark);
+	padding: 0.75rem 1rem;
+	border-radius: 0.25rem;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+ul.remarks li {
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-left: 1rem;
+	padding: 0.125rem;
+	position: relative;
+}
+
+ul.remarks li::before {
+	content: "";
+	position: absolute;
+	left: -1rem;
+	margin-top: 0.2rem;
+	font-size: 1.25rem;
+	background: var(--yellow);
+	height: 0.5rem;
+	width: 0.5rem;
+	clip-path: url(#logo);
+}
+
+@media (max-width: 768px) {
+	ul.remarks {
+		padding: 0.5rem 0.75rem;
+	}
+
+	ul.remarks li {
+		font-size: 0.8rem;
+	}
+
+	ul.remarks li::before {
+		left: -0.75rem;
+		margin-top: 0.175rem;
+		font-size: 1rem;
+		height: 0.4rem;
+		width: 0.4rem;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	ul.remarks {
+		background: var(--purple-darker);
 	}
 }

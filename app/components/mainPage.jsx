@@ -13,7 +13,7 @@ export default function MainPage() {
 	// Getting data from api
 	useEffect(() => {
 		axios
-			.get("/api/main")
+			.get("/api/content?page=main")
 			.then((response) => {
 				setData(response.data);
 			})
@@ -39,40 +39,48 @@ export default function MainPage() {
 								<h1>{content.title}</h1>
 								<h2>{content.subtitle}</h2>
 								<p>{content.text}</p>
-								{content.ctas.length > 0 ? (
-									<div className={style.ctas}>
-										{content.ctas.map(
-											(cta, index) => (
-												<Link
-													key={index}
-													href={cta.uri}
-													className={style.cta}>
-													{cta.title}
-												</Link>
-											),
-											0
-										)}
-									</div>
+								{content.ctas ? (
+									<>
+										{content.ctas.length > 0 ? (
+											<div className={style.ctas}>
+												{content.ctas.map(
+													(cta, index) => (
+														<Link
+															key={index}
+															href={cta.uri}
+															className={style.cta}>
+															{cta.title}
+														</Link>
+													),
+													0
+												)}
+											</div>
+										) : null}
+									</>
 								) : null}
 							</div>
 						) : (
 							<div className={style.content}>
 								<h2>{content.title}</h2>
 								<p>{content.text}</p>
-								{content.ctas.length > 0 ? (
-									<div className={style.ctas}>
-										{content.ctas.map(
-											(cta, index) => (
-												<Link
-													key={index}
-													href={cta.uri}
-													className={style.cta}>
-													{cta.title}
-												</Link>
-											),
-											0
-										)}
-									</div>
+								{content.ctas ? (
+									<>
+										{content.ctas.length > 0 ? (
+											<div className={style.ctas}>
+												{content.ctas.map(
+													(cta, index) => (
+														<Link
+															key={index}
+															href={cta.uri}
+															className={style.cta}>
+															{cta.title}
+														</Link>
+													),
+													0
+												)}
+											</div>
+										) : null}
+									</>
 								) : null}
 							</div>
 						)}

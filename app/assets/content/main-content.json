@@ -6,5 +6,76 @@
         "type": "hero",
         "heroType": "kaak",
         "ctas": []
+    },
+    {
+        "title": "Leirin hinnasto",
+        "page": "osallistujalle",
+        "dev": true,
+        "type": "table",
+        "table": {
+            "head": [
+                "Ikäkausi",
+                "Kesto (vrk)",
+                "Hinta"
+            ],
+            "body": [
+                [
+                    "Sudenpennut, 7-9v",
+                    "2",
+                    {
+                        "$numberInt": "55"
+                    }
+                ],
+                [
+                    "Seikkailijat, 10-12v",
+                    "3",
+                    {
+                        "$numberInt": "65"
+                    }
+                ],
+                [
+                    "Tarpojat, 12-15v",
+                    "3",
+                    {
+                        "$numberInt": "65"
+                    }
+                ],
+                [
+                    "Samoajat, 15-18v (to-su)",
+                    "3",
+                    {
+                        "$numberInt": "40"
+                    }
+                ],
+                [
+                    "Vaeltajat & aikuiset",
+                    "3",
+                    {
+                        "$numberInt": "40"
+                    }
+                ],
+                [
+                    "Perhepartiolainen aikuinen tai lapsi, (synt. 2020 tai aiemmin)",
+                    "1",
+                    {
+                        "$numberInt": "20"
+                    }
+                ],
+                [
+                    "Perhepartiolainen, 0-3v (2021 syntynyt tai myöhemmin)",
+                    "",
+                    {
+                        "$numberInt": "0"
+                    }
+                ]
+            ],
+            "foot": [
+                "Hinnat ovat alv vapaat",
+                "Huomioittehan, että leirille ilmoittautuminen on sitova eikä leirimaksua palauteta, mikäli osallistumisen peruutetaan 30.4.2024 jälkeen.",
+                "Huomioi myös, että esitetyt hinnat eivät ota huomioon mahdollisia tukia joita lippukunnat saattavat myöntää osallistujilleen. Tarkemmat tiedot saat lippukunnastasi.",
+                "Hinnasto ei sisällä kaikkia yhdistelmiä, tarkemmat tiedot löytyvät ilmoittautumislomakkeelta.",
+                "Bussikuljetus ei sisälly Perhepartiolaisten hintaan, mutta se löytyy lisänä ilmoittautumislomakkeesta."
+            ]
+        }
     }
 ]

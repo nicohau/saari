@@ -4,7 +4,6 @@ import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import navitems from "@/app/assets/content/navitems.json";
 import MobileMenu from "@/app/components/headerMobileMenu";
 
 const Header = () => {
@@ -16,9 +15,7 @@ const Header = () => {
 			.then((response) => {
 				// Setting the data in priority order 0 ->
 
-				let sortedData = response.data.sort((a, b) => {
-					return a.priority - b.priority;
-				});
+				const sortedData = response.data.sort((a, b) => a.priority - b.priority);
 
 				setData(sortedData);
 			})
