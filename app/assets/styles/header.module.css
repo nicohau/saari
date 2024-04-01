@@ -154,9 +154,6 @@
 	--_transition-time: 150ms;
 	transition: var(--_transition-time);
 	transition-delay: var(--_transition-time);
-	@media (prefers-reduced-motion: reduce) {
-		transition: none;
-	}
 }
 
 .mobileToggle label span {
@@ -167,9 +164,6 @@
 	margin: -1px 0;
 	transition: transform var(--_transition-time);
 	transition-delay: 0ms;
-	@media (prefers-reduced-motion: reduce) {
-		transition: none;
-	}
 }
 
 .mobileToggle input:checked ~ label {
@@ -260,10 +254,6 @@
 		opacity: 0;
 		pointer-events: none;
 		z-index: 9999;
-
-		@media (prefers-reduced-motion: reduce) {
-			transition: none;
-		}
 	}
 
 	.navigationMobile .navItem a {
@@ -290,7 +280,7 @@
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	.mobileToggle input:checked ~ label {
 		background: var(--purple);
 		color: var(--white);
@@ -317,4 +307,4 @@
 		background: var(--white);
 		color: var(--black);
 	}
-}
+} */

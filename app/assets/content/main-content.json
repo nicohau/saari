@@ -88,7 +88,9 @@
         "page": "yleista",
         "type": "hero",
         "heroType": "yleista",
-        "text": "Vaasan Sinisten, Ahjopartion sekä Laihian Eräpoikien ja -tyttöjen yhteinen kesäleiri Ähtärin Selkäsaaressa 27.-30.6.2024"
+        "text": "Vaasan Sinisten, Ahjopartion sekä Laihian Eräpoikien ja -tyttöjen yhteinen kesäleiri Ähtärin Selkäsaaressa 27.-30.6.2024",
+        "priority": 1,
+        "dev": false
     },
     {
         "page": "yleista",
@@ -96,7 +98,8 @@
             "Kesäleiri S.A.A.R.I. pidetään nimensä mukaisesti saaressa. Selkäsaari sijaitsee Ähtärissä, Peränne-järvessä. Selkäsaari on Etelä-Pohjanmaan Partiolaisten omistama retkeilyyn tarkoitettu alue.",
             "Kulku Selkäsaareen tapahtuu pienellä veneellä - lisäksi käytössä on kanootteja ja kaksi soutuvenettä. Ahjopartion Buster on myös tulossa mukaan."
         ],
-        "priority": 2
+        "priority": 2,
+        "dev": false
     },
     {
         "page": "yleista",
@@ -107,6 +110,17 @@
             "Leirille saapuminen sekä poistuminen hoituu yhteiskuljetuksin bussilla siten, että Seikkailijat ja sitä vanhemmat lähtevät to 27.6. aamulla ja sudenpennut pe 28.6. aamulla. Leiriltä palataan sunnuntaina 30.6. iltapäivällä/illansuussa.",
             "Aikataulu tarkentuu lähempänä lerin ajankohtaa! Leirille osallistuvilla Perhepartiolaisilla on mahdollisuus saapua leirille omalla kyydillä."
         ],
-        "priority": 3
+        "priority": 3,
+        "dev": false
+    },
+    {
+        "page": "yleista",
+        "textItems": [
+            "Leirin hinnoittelun löydät ylävalikosta kohdasta 'Leirin hinnasto' sekä ilmoittautumislomakeelta.",
+            "Majoittuminen leirillä tapahtuu teltoissa. Lippukunnan kalustosta riippuen leirillä nukutaan pienimmissä teltoissa sekä suuremmissa puolijoukkueteltoissa.",
+            "Leirille osallistuvat perhepartiolaiset voivat majoittua myös omassa teltassa. Lainatelttoja on saatavilla - lisätietoa teltan lainaamisesta saat leirinjohtajilta: Tiina & Karina."
+        ],
+        "priority": 4,
+        "dev": false
     }
 ]

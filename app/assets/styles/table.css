@@ -58,7 +58,7 @@ tbody td {
 	text-align: left;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	thead::after {
 		background: var(--purple-dark);
 	}
@@ -66,4 +66,4 @@ tbody td {
 	tbody tr:nth-child(even)::after {
 		background: var(--purple-darker);
 	}
-}
+} */

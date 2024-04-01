@@ -126,11 +126,28 @@ export default function Osallistujalle({ page }) {
 							<HeroSection content={content} />
 						) : (
 							<>
-								{content.title ? <h2>{content.title}</h2> : null}
-								{content.textItems ? textBlock(content) : null}
-								{content.text ? <p>{content.text}</p> : null}
-								{content.ctas ? <CtaItems ctas={content.ctas} /> : null}
-								{content.table ? <TableBuilder table={content.table} /> : null}
+								{content.textItems ? (
+									<div className={style.textBlock}>
+										{content.title ? <h2>{content.title}</h2> : null}
+										{content.subtitle ? <h3>{content.subtitle}</h3> : null}
+										{content.textItems ? textBlock(content) : null}
+										{content.text ? <p>{content.text}</p> : null}
+										{content.ctas ? <CtaItems ctas={content.ctas} /> : null}
+										{content.table ? (
+											<TableBuilder table={content.table} />
+										) : null}
+									</div>
+								) : (
+									<>
+										{content.title ? <h2>{content.title}</h2> : null}
+										{content.subtitle ? <h3>{content.subtitle}</h3> : null}
+										{content.text ? <p>{content.text}</p> : null}
+										{content.ctas ? <CtaItems ctas={content.ctas} /> : null}
+										{content.table ? (
+											<TableBuilder table={content.table} />
+										) : null}
+									</>
+								)}
 							</>
 						)}
 					</div>

@@ -59,6 +59,9 @@ export async function GET(request) {
 			if (element.priority) {
 				obj.priority = element.priority;
 			}
+			if (element.textItems) {
+				obj.textItems = element.textItems;
+			}
 
 			if (element.type === "hero") {
 				obj.heroType = element.heroType;

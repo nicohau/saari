@@ -34,7 +34,7 @@
 	--header-height: 7rem;
 	--footer-height: 7.5rem;
 
-	--page-maxwidth: 1200px;
+	--page-maxwidth: 1000px;
 	--page-padding: 2rem;
 
 	--logoW: url("/images/logoW.png");
@@ -59,7 +59,7 @@ header {
 	height: var(--header-height);
 	background: var(--purple);
 	width: 100%;
-	max-width: var(--page-maxwidth);
+	max-width: 1200px;
 	margin: 0 auto;
 	z-index: 9999;
 }
@@ -77,7 +77,7 @@ main {
 	}
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--white: #fff;
 		--light-gray: #f5f5f5;
@@ -118,4 +118,4 @@ main {
 	header {
 		background: var(--purple-darkest);
 	}
-}
+} */
