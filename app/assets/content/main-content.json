@@ -5,7 +5,12 @@
         "text": "Vaasan Sinisten ja Ahjopartion yhteinen kesäleiri järjestetään 2024 kesällä",
         "type": "hero",
         "heroType": "kaak",
-        "ctas": []
+        "ctas": [
+            {
+                "title": "Yleistä leiristä",
+                "uri": "/leiritietoa/yleista"
+            }
+        ]
     },
     {
         "title": "Leirin hinnasto",
@@ -77,5 +82,31 @@
                 "Bussikuljetus ei sisälly Perhepartiolaisten hintaan, mutta se löytyy lisänä ilmoittautumislomakkeesta."
             ]
         }
+    },
+    {
+        "title": "Yleistä leiristä",
+        "page": "yleista",
+        "type": "hero",
+        "heroType": "yleista",
+        "text": "Vaasan Sinisten, Ahjopartion sekä Laihian Eräpoikien ja -tyttöjen yhteinen kesäleiri Ähtärin Selkäsaaressa 27.-30.6.2024"
+    },
+    {
+        "page": "yleista",
+        "textItems": [
+            "Kesäleiri S.A.A.R.I. pidetään nimensä mukaisesti saaressa. Selkäsaari sijaitsee Ähtärissä, Peränne-järvessä. Selkäsaari on Etelä-Pohjanmaan Partiolaisten omistama retkeilyyn tarkoitettu alue.",
+            "Kulku Selkäsaareen tapahtuu pienellä veneellä - lisäksi käytössä on kanootteja ja kaksi soutuvenettä. Ahjopartion Buster on myös tulossa mukaan."
+        ],
+        "priority": 2
+    },
+    {
+        "page": "yleista",
+        "textItems": [
+            "Leirin järjestäjänä toimii kolme lippukuntaa, Ahjopartio, Laihian Eräpojat- ja tytöt sekä Vaasan Siniset.",
+            "Lippukunnissa on mukana paljon nuoria partiolaisia ja eikä kaikilla ole vielä leirikokemusta. Leirin tarkoituksena on mahdollistaa kaikille kiva leirikokemus! Leirillä leikitään, ollaan iltanuotiolla, harjoitellaan leiritaitoja ja ratkotaan yhdessä tehtäviä. Leirillä on myös mahdollisuus uintiin ja kanootilla melomiseen.",
+            "Myös huoltajia otetaan mielellään mukaan aikuisten porukkaan leirille apukäsiksi ja -silmiksi.",
+            "Leirille saapuminen sekä poistuminen hoituu yhteiskuljetuksin bussilla siten, että Seikkailijat ja sitä vanhemmat lähtevät to 27.6. aamulla ja sudenpennut pe 28.6. aamulla. Leiriltä palataan sunnuntaina 30.6. iltapäivällä/illansuussa.",
+            "Aikataulu tarkentuu lähempänä lerin ajankohtaa! Leirille osallistuvilla Perhepartiolaisilla on mahdollisuus saapua leirille omalla kyydillä."
+        ],
+        "priority": 3
     }
 ]
