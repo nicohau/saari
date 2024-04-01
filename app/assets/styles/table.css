@@ -1,0 +1,69 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+thead {
+	position: relative;
+}
+
+thead::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--purple-darker);
+	z-index: -1;
+	border-radius: 0.35rem;
+}
+
+thead tr {
+	height: 2rem;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+thead th {
+	font: inherit;
+	padding: 0 0.75rem;
+	text-align: left;
+	white-space: nowrap;
+}
+
+tbody tr {
+	height: 2rem;
+	font-size: 1rem;
+	font-weight: 400;
+	position: relative;
+}
+
+tbody tr:nth-child(even)::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--purple-dark);
+	z-index: -1;
+	border-radius: 0.35rem;
+}
+
+tbody td {
+	font: inherit;
+	padding: 0 1rem;
+	text-align: left;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	thead::after {
+		background: var(--purple-dark);
+	}
+
+	tbody tr:nth-child(even)::after {
+		background: var(--purple-darker);
+	}
+} */

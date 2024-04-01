@@ -1,0 +1,277 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding-top: 4rem;
+	padding-bottom: 9rem;
+}
+
+.main:empty::before {
+	content: "";
+	border: 0.5rem solid var(--white);
+	border-top-color: var(--yellow);
+	width: 3rem;
+	height: 3rem;
+	margin-top: 2rem;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.hero {
+	min-height: 12rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+.hero h1 {
+	width: 100%;
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: var(--yellow);
+}
+
+.hero p {
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+.hero .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+.kaak {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+	height: calc(100vh - var(--header-height) - var(--footer-height) - 12rem);
+}
+
+.kaak h1 {
+	font-size: 9rem;
+	font-weight: 900;
+}
+
+.kaak h2 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.kaak p {
+	font-size: 1.5rem;
+	line-height: 1.25;
+	max-width: 45ch;
+	margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+	.hero h1 {
+		font-size: 2.25rem;
+	}
+
+	.hero p {
+		font-size: 1.4rem;
+	}
+
+	.kaak h1 {
+		font-size: 8rem;
+	}
+
+	.kaak h2 {
+		font-size: 2.5rem;
+	}
+
+	.kaak p {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 15rem;
+	}
+
+	.hero h1 {
+		font-size: 2.75rem;
+	}
+
+	.hero p {
+		font-size: 1rem;
+		line-height: 1.25;
+	}
+
+	.kaak h1 {
+		font-size: 4rem;
+	}
+
+	.kaak h2 {
+		font-size: 2rem;
+	}
+
+	.kaak p {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}
+
+.contentWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	gap: 1rem;
+	width: 100%;
+}
+
+.textBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	gap: 1rem;
+	width: 100%;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background: var(--purple-dark);
+	color: var(--white);
+	padding: 1rem 1.5rem;
+	border-radius: 0.35rem;
+
+	/* @media (prefers-color-scheme: dark) {
+		background: var(--purple-darker);
+	} */
+}
+
+.textBlock h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--yellow);
+}
+
+.textBlock h3 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+	.textBlock {
+		font-size: 1rem;
+	}
+
+	.textBlock h2 {
+		font-size: 2rem;
+		line-height: 1;
+	}
+
+	.textBlock h3 {
+		font-size: 1.75rem;
+	}
+}
+
+.ctas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.cta {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 0.2rem solid var(--yellow);
+	border-radius: 0.5rem;
+	background-color: var(--yellow);
+	color: var(--black);
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.cta:hover {
+	background-color: var(--black);
+	color: var(--yellow);
+}
+
+ul.remarks {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	gap: 0.5rem;
+	background: var(--purple-dark);
+	padding: 0.75rem 1rem;
+	border-radius: 0.25rem;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+ul.remarks li {
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-left: 1rem;
+	padding: 0.125rem;
+	position: relative;
+}
+
+ul.remarks li::before {
+	content: "";
+	position: absolute;
+	left: -1rem;
+	margin-top: 0.2rem;
+	font-size: 1.25rem;
+	background: var(--yellow);
+	height: 0.5rem;
+	width: 0.5rem;
+	clip-path: url(#logo);
+}
+
+@media (max-width: 768px) {
+	ul.remarks {
+		padding: 0.5rem 0.75rem;
+	}
+
+	ul.remarks li {
+		font-size: 0.8rem;
+	}
+
+	ul.remarks li::before {
+		left: -0.75rem;
+		margin-top: 0.175rem;
+		font-size: 1rem;
+		height: 0.4rem;
+		width: 0.4rem;
+	}
+}
+
+/* @media (prefers-color-scheme: dark) {
+	ul.remarks {
+		background: var(--purple-darker);
+	}
+} */
