@@ -57,6 +57,7 @@ tbody td {
 	padding: 0 1rem;
 	text-align: left;
 }
+
 @media (max-width: 768px) {
 	tbody tr {
 		height: 2.75rem;
