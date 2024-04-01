@@ -81,6 +81,17 @@ const TableBuilder = ({ table }) => (
 	</>
 );
 
+const textBlock = (content) => (
+	<>
+		{content.textItems.map(
+			(text, index) => (
+				<p key={index}>{text}</p>
+			),
+			0
+		)}
+	</>
+);
+
 export default function Osallistujalle({ page }) {
 	// Setting the state
 	const [data, setData] = useState([]);
@@ -115,8 +126,9 @@ export default function Osallistujalle({ page }) {
 							<HeroSection content={content} />
 						) : (
 							<>
-								<h2>{content.title}</h2>
-								<p>{content.text}</p>
+								{content.title ? <h2>{content.title}</h2> : null}
+								{content.textItems ? textBlock(content) : null}
+								{content.text ? <p>{content.text}</p> : null}
 								{content.ctas ? <CtaItems ctas={content.ctas} /> : null}
 								{content.table ? <TableBuilder table={content.table} /> : null}
 							</>
