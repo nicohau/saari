@@ -58,12 +58,8 @@ tbody td {
 	text-align: left;
 }
 
-/* @media (prefers-color-scheme: dark) {
-	thead::after {
-		background: var(--purple-dark);
+@media (max-width: 768px) {
+	tbody tr {
+		height: 2.75rem;
 	}
-
-	tbody tr:nth-child(even)::after {
-		background: var(--purple-darker);
-	}
-} */
+}
