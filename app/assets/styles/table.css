@@ -15,7 +15,8 @@ thead th {
 	padding: 0 0.75rem;
 	text-align: left;
 	white-space: nowrap;
-	background: var(--purple-darker);
+	background: var(--purple);
+	color: var(--white);
 }
 
 thead th:first-child {
@@ -36,7 +37,7 @@ tbody tr {
 }
 
 tbody tr:nth-child(even) td {
-	background: var(--purple-dark);
+	background: rgba(var(--purple-rgb), 0.1);
 }
 
 tbody tr:nth-child(even) td:first-child {
@@ -53,10 +54,21 @@ tbody td {
 	font: inherit;
 	padding: 0 1rem;
 	text-align: left;
+	line-height: 1.25;
 }
 
 @media (max-width: 768px) {
+	thead th {
+		font-size: 0.9rem;
+		padding: 0 1rem 0 0.75rem;
+	}
+
 	tbody tr {
-		height: 2.75rem;
+		height: 3rem;
+		font-size: 0.9rem;
+	}
+
+	tbody td {
+		padding: 0.5rem 0.5rem 0.5rem 1rem;
 	}
 }

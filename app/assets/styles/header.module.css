@@ -52,7 +52,6 @@
 	display: flex;
 	gap: 1.5rem;
 	align-items: center;
-	height: 2rem;
 }
 
 .navItem {
@@ -82,24 +81,24 @@
 }
 
 .navButton {
-	font-size: 1.15rem;
-	font-weight: 700;
-	color: var(--black);
-	text-decoration: none;
 	background: var(--yellow);
-	border-radius: 0.35rem;
-	padding: 0.4rem 0.85rem;
-	transition: 75ms;
+	color: var(--black);
+	border: 0.2rem solid var(--yellow);
+	font-size: 1.1rem;
+	font-weight: 600;
+	width: 8rem;
+	height: 2.25rem;
+	border-radius: 2rem;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 75ms ease;
 }
 
 .navButton:hover {
-	background: var(--white);
-	color: var(--black);
-
-	@media (pointer: coarse) {
-		background: var(--yellow);
-	}
+	background: var(--purple-dark);
+	color: var(--white);
 }
 
 .navButton a {
@@ -126,9 +125,9 @@
 	align-items: center;
 	justify-content: center;
 	gap: 0.75rem;
-	border-radius: 0.5rem;
+	border-radius: 2.5rem;
 	transition: 150ms;
-	padding: 0 0.75rem;
+	padding: 0 1.5rem;
 	@media (prefers-reduced-motion: reduce) {
 		transition: none;
 	}
@@ -193,7 +192,7 @@
 	display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.logoWrapper {
 		height: 4rem;
 	}
@@ -247,7 +246,7 @@
 		flex-direction: column;
 		gap: 0.25rem;
 		padding: 0.75rem;
-		border-radius: 0.5rem;
+		border-radius: 1rem;
 		transition: 250ms;
 		transform: scaleY(0);
 		transform-origin: top;
@@ -268,43 +267,18 @@
 		font-size: 1.15rem;
 		font-weight: 700;
 		height: 2.5rem;
+		width: auto;
 		padding: 0 1rem;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+		background: var(--orange);
+		border-color: var(--orange);
+		color: var(--white);
 	}
 
 	.navigationMobile .navButton:hover {
-		background: var(--yellow);
-		color: var(--black);
+		background: var(--orange);
+		color: var(--white);
 	}
 }
-
-/* @media (prefers-color-scheme: dark) {
-	.mobileToggle input:checked ~ label {
-		background: var(--purple);
-		color: var(--white);
-	}
-
-	.mobileToggle input:checked ~ label .menuIcon {
-		color: var(--white);
-	}
-
-	.navigationMobile {
-		background: var(--purple);
-	}
-
-	.navigationMobile .navItem a {
-		color: var(--white);
-	}
-
-	.navigationMobile .navButton {
-		color: var(--black);
-		background: var(--yellow);
-	}
-
-	.navigationMobile .navButton:hover {
-		background: var(--white);
-		color: var(--black);
-	}
-} */
