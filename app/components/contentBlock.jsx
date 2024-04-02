@@ -138,7 +138,7 @@ export default function Osallistujalle({ page }) {
 										) : null}
 									</div>
 								) : (
-									<>
+									<div className={style.textBlock}>
 										{content.title ? <h2>{content.title}</h2> : null}
 										{content.subtitle ? <h3>{content.subtitle}</h3> : null}
 										{content.text ? <p>{content.text}</p> : null}
@@ -146,7 +146,7 @@ export default function Osallistujalle({ page }) {
 										{content.table ? (
 											<TableBuilder table={content.table} />
 										) : null}
-									</>
+									</div>
 								)}
 							</>
 						)}

@@ -4,6 +4,11 @@ import React from "react";
 
 // Getting parameters
 export default function HeaderMobileMenu({ navItems }) {
+	// Mobile menu click
+	const handleClick = () => {
+		document.getElementById("nav-toggle").checked = false;
+	};
+
 	return (
 		<>
 			<div className={style.mobileToggle}>
@@ -32,7 +37,11 @@ export default function HeaderMobileMenu({ navItems }) {
 										{item.title}
 									</a>
 								) : (
-									<Link href={item.uri}>{item.title}</Link>
+									<Link
+										href={item.uri}
+										onClick={handleClick}>
+										{item.title}
+									</Link>
 								)}
 							</li>
 						),

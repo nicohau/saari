@@ -18,10 +18,10 @@ export default function NotFound() {
 		<main className={style.mainWrapper}>
 			<div className={style.card}>
 				<h1>KÄÄK!</h1>
-				<p>
+				<h3>
 					Etsimääsi sivua ei löytynyt. <br />
 					Tarkista osoite ja yritä uudelleen.
-				</p>
+				</h3>
 				<div className={style.buttonWrapper}>
 					<div
 						onClick={handleClick}
@@ -34,6 +34,13 @@ export default function NotFound() {
 						Palaa kotiin
 					</Link>
 				</div>
+			</div>
+			<div className={style.serviceWrapper}>
+				<p>
+					Jos ongelma jatkuu, olettehan <br />
+					yhteydessä ylläpitoon!
+				</p>
+				<a href='mailto:saariweb@tacodesign.eu'>Lähetä sähköpostia</a>
 			</div>
 		</main>
 	);
