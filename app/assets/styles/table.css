@@ -4,22 +4,6 @@ table {
 	border-spacing: 0;
 }
 
-thead {
-	position: relative;
-}
-
-thead::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: var(--purple-darker);
-	z-index: -1;
-	border-radius: 0.35rem;
-}
-
 thead tr {
 	height: 2rem;
 	font-size: 1rem;
@@ -31,6 +15,17 @@ thead th {
 	padding: 0 0.75rem;
 	text-align: left;
 	white-space: nowrap;
+	background: var(--purple-darker);
+}
+
+thead th:first-child {
+	border-top-left-radius: 0.35rem;
+	border-bottom-left-radius: 0.35rem;
+}
+
+thead th:last-child {
+	border-top-right-radius: 0.35rem;
+	border-bottom-right-radius: 0.35rem;
 }
 
 tbody tr {
@@ -40,16 +35,18 @@ tbody tr {
 	position: relative;
 }
 
-tbody tr:nth-child(even)::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+tbody tr:nth-child(even) td {
 	background: var(--purple-dark);
-	z-index: -1;
-	border-radius: 0.35rem;
+}
+
+tbody tr:nth-child(even) td:first-child {
+	border-top-left-radius: 0.35rem;
+	border-bottom-left-radius: 0.35rem;
+}
+
+tbody tr:nth-child(even) td:last-child {
+	border-top-right-radius: 0.35rem;
+	border-bottom-right-radius: 0.35rem;
 }
 
 tbody td {
