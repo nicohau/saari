@@ -36,6 +36,7 @@
 	align-items: center;
 	text-align: center;
 	gap: 1rem;
+	padding: 2rem 0;
 }
 
 .hero h1 {
@@ -43,6 +44,12 @@
 	font-size: 3.5rem;
 	font-weight: 700;
 	color: var(--yellow);
+}
+
+.hero h2 {
+	width: 100%;
+	font-size: 2.25rem;
+	font-weight: 700;
 }
 
 .hero p {
@@ -66,7 +73,7 @@
 	align-items: center;
 	text-align: center;
 	gap: 1rem;
-	height: calc(100vh - var(--header-height) - var(--footer-height) - 12rem);
+	min-height: calc(100vh - var(--header-height) - var(--footer-height) - 12rem);
 }
 
 .kaak h1 {
@@ -172,7 +179,7 @@
 }
 
 .textBlock h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 	color: var(--purple);
 }
@@ -199,6 +206,7 @@
 	min-width: 12rem;
 	height: 2.75rem;
 	padding: 0 1.5rem;
+	white-space: nowrap;
 	border-radius: 2rem;
 	cursor: pointer;
 	display: flex;
@@ -238,6 +246,11 @@
 
 	.textBlock h3 {
 		font-size: 1.75rem;
+	}
+
+	.ctas {
+		gap: 0.5rem;
+		flex-direction: column;
 	}
 
 	.cta {

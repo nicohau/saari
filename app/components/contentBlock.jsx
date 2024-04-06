@@ -31,9 +31,9 @@ const CtaItems = ({ ctas }) => (
 
 const HeroSection = ({ content }) => (
 	<div className={content.heroType && content.heroType === "kaak" ? style.kaak : style.content}>
-		<h1>{content.title}</h1>
-		<h2>{content.subtitle}</h2>
-		<p>{content.text}</p>
+		{content.title ? <h1>{content.title}</h1> : null}
+		{content.subtitle ? <h2>{content.subtitle}</h2> : null}
+		{content.text ? <p>{content.text}</p> : null}
 		{content.ctas ? <CtaItems ctas={content.ctas} /> : null}
 	</div>
 );
