@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Ohjelma",
+    "uri": "/ohjelma",
+    "isButton": false,
+    "external": false
+  },
+  {
+    "title": "Mainoksia",
+    "uri": "/mainoksia",
+    "isButton": false,
+    "external": false
+  },
+  {
+    "title": "Seuraa leirin tapahtumia",
+    "uri": "https://www.instagram.com/s.a.a.r.i.24",
+    "isButton": true,
+    "external": true
+  }
+]

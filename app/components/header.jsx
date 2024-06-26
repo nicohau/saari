@@ -1,29 +1,13 @@
 "use client";
 import style from "@/app/assets/styles/header.module.css";
-import axios from "axios";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import MobileMenu from "@/app/components/headerMobileMenu";
 
+import data from "@/app/data/header.json";
+
 const Header = () => {
-	const [data, setData] = useState([]);
-
-	useEffect(() => {
-		axios
-			.get("/api/navitems")
-			.then((response) => {
-				// Setting the data in priority order 0 ->
-
-				const sortedData = response.data.sort((a, b) => a.priority - b.priority);
-
-				setData(sortedData);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	}, []);
-
 	return (
 		<header className={style.headerWrapper}>
 			<Link

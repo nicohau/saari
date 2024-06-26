@@ -45,6 +45,12 @@
 	color: var(--yellow);
 }
 
+.hero h2 {
+	width: 100%;
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
 .hero p {
 	width: 100%;
 	font-size: 1.5rem;
@@ -148,6 +154,20 @@
 	text-align: left;
 	gap: 1rem;
 	width: 100%;
+}
+
+.programWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	gap: 1rem;
+	width: 100%;
+	background: var(--white);
+	color: var(--black);
+	padding: 2rem;
+	border-radius: 1rem;
 }
 
 .textBlock {

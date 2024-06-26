@@ -5,7 +5,6 @@ import { Gabarito } from "next/font/google";
 
 const gabarito = Gabarito({
 	subsets: ["latin"],
-	variants: ["400", "600", "700", "900"],
 });
 
 import Footer from "@/app/components/footer";
@@ -25,7 +24,7 @@ export default function RootLayout({ children }) {
 				<title>S.A.A.R.I. 2024</title>
 				<meta
 					name='description'
-					content='S.A.A.R.I. on Vaasan Sinisten, Ahjopartion sekä Laihian Eräpoikien ja -tyttöjen yhteinen kesäleiri vuonna 2024.'
+					content='S.A.A.R.I. on Vaasan Sinisten, Ahjopartion sekä Laihian Eräkaverien yhteinen kesäleiri vuonna 2024.'
 				/>
 				<meta
 					name='image'
@@ -47,6 +46,19 @@ export default function RootLayout({ children }) {
 				<link
 					rel='preconnect'
 					href='https://fonts.gstatic.com'
+				/>
+				<link
+					rel='preconnect'
+					href='https://fonts.googleapis.com'
+				/>
+				<link
+					rel='preconnect'
+					href='https://fonts.gstatic.com'
+					crossorigin
+				/>
+				<link
+					href='https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Reddit+Sans+Condensed:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap'
+					rel='stylesheet'
 				/>
 			</head>
 			<body className={gabarito.className}>

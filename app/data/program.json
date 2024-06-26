@@ -1,0 +1,271 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "Sudenpennut"
+    },
+    {
+      "id": 2,
+      "name": "Seikkailijat & Tarpojat"
+    },
+    {
+      "id": 3,
+      "name": "Samoajat"
+    }
+  ],
+  "days": [
+    {
+      "title": "Torstai",
+      "date": "2024-06-27",
+      "events": [
+        {
+          "time": "11:00",
+          "events": [
+            {
+              "title": "Seikkailijat & Tarpojat saapuvat",
+              "group": 2
+            },
+            {
+              "title": "Telttojen pystytys",
+              "group": 2
+            }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lounas"
+        },
+        {
+          "time": "13:00",
+          "title": "Rakentelua"
+        },
+        {
+          "time": "16:30",
+          "title": "Päivällinen"
+        },
+        {
+          "time": "18:00",
+          "secret": true
+        },
+        {
+          "time": "20:00",
+          "title": "Iltapala"
+        },
+        {
+          "time": "22:00",
+          "title": "Hiljaisuus",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "title": "Perjantai",
+      "date": "2024-06-28",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "Herätys"
+        },
+        {
+          "time": "08:15",
+          "title": "Aamupala"
+        },
+        {
+          "time": "09:15",
+          "title": "Lipunnosto"
+        },
+        {
+          "time": "09:30",
+          "events": [
+            {
+              "secret": true,
+              "group": 2
+            },
+            {
+              "secret": true,
+              "group": 3
+            }
+          ]
+        },
+        {
+          "time": "11:00",
+          "events": [
+            {
+              "title": "Sudenpennut saapuvat",
+              "group": 1
+            },
+            {
+              "title": "Telttojen pystytys",
+              "group": 1
+            }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lounas"
+        },
+        {
+          "time": "14:00",
+          "events": [
+            {
+              "secret": true,
+              "group": 1
+            },
+            {
+              "secret": true,
+              "group": 2
+            }
+          ]
+        },
+        {
+          "time": "16:30",
+          "events": [
+            {
+              "title": "Päivällinen"
+            },
+            {
+              "title": "Vapaa-aikaa"
+            }
+          ]
+        },
+        {
+          "time": "20:00",
+          "events": [
+            {
+              "title": "Iltapala"
+            },
+            {
+              "title": "Samoajat SPA",
+              "group": 3
+            }
+          ]
+        },
+        {
+          "time": "22:00",
+          "title": "Hiljaisuus",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "title": "Lauantai",
+      "date": "2024-06-29",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "Herätys"
+        },
+        {
+          "time": "08:15",
+          "title": "Aamupala"
+        },
+        {
+          "time": "09:15",
+          "title": "Lipunnosto"
+        },
+        {
+          "time": "09:30",
+          "events": [
+            {
+              "secret": true,
+              "group": 1
+            },
+            {
+              "secret": true,
+              "group": 2
+            },
+            {
+              "secret": true,
+              "group": 3
+            }
+          ]
+        },
+        {
+          "time": "12:00",
+          "title": "Lounas"
+        },
+        {
+          "time": "13:00",
+          "secret": true,
+          "group": 1
+        },
+        {
+          "time": "14:00",
+          "secret": true,
+          "group": 2
+        },
+        {
+          "time": "16:30",
+          "events": [
+            {
+              "title": "Päivällinen"
+            },
+            {
+              "title": "Vapaa-aikaa"
+            }
+          ]
+        },
+        {
+          "time": "18:30",
+          "secret": true
+        },
+        {
+          "time": "20:00",
+          "title": "Iltapala"
+        },
+        {
+          "time": "22:00",
+          "title": "Hiljaisuus",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "title": "Sunnuntai",
+      "date": "2024-06-30",
+      "events": [
+        {
+          "time": "08:00",
+          "title": "Herätys"
+        },
+        {
+          "time": "08:15",
+          "title": "Aamupala"
+        },
+        {
+          "time": "09:15",
+          "title": "Lipunnosto"
+        },
+        {
+          "title": "Leirin purku alkaa",
+          "highlight": true
+        },
+        {
+          "time": "10:30",
+          "title": "Siirtyminen mantereelle",
+          "group": 2
+        },
+        {
+          "time": "12:00",
+          "events": [
+            {
+              "title": "Lounas"
+            },
+            {
+              "title": "Siirtyminen mantereelle",
+              "group": 1
+            }
+          ]
+        },
+        {
+          "time": "13:00",
+          "title": "Ensimmäinen bussi lähtee"
+        },
+        {
+          "time": "14:00",
+          "title": "Toinen bussi lähtee"
+        }
+      ]
+    }
+  ]
+}

@@ -31,6 +31,10 @@
 	--logoY: url("/images/logoY.png");
 	--logoO: url("/images/logoO.png");
 	--logoP: url("/images/logoP.png");
+
+	--ff-sans: "Reddit Sans", sans-serif;
+	--ff-cond: "Reddit Sans Condensed", sans-serif;
+	--ff-mono: "Reddit Mono", monospace;
 }
 
 body {
