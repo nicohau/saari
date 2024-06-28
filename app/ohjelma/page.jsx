@@ -1,3 +1,4 @@
+"use client";
 import style from "@/app/assets/styles/main.module.css";
 import prog from "./ohjelma.module.css";
 
