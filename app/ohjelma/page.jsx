@@ -1,15 +1,15 @@
 "use client";
 import style from "@/app/assets/styles/main.module.css";
 import prog from "./ohjelma.module.css";
-
-export const metadata = {
-	title: "Ohjelma - S.A.A.R.I. 2024",
-	description: "Leirin ohjelma S.A.A.R.I. 2024",
-};
+import { useEffect } from "react";
 
 import program from "@/app/data/program.json";
 
 export default function Home() {
+	useEffect(() => {
+		document.title = "Ohjelma - S.A.A.R.I. 2024";
+	}, []);
+
 	return (
 		<main className={style.main}>
 			<div className={style.hero}>
@@ -32,7 +32,7 @@ const ScheduleBuilder = ({ schedule }) => {
 		<div className={prog.wrapper}>
 			{/* If the day.date is today or earlier then display other wise hide */}
 			{schedule.days.map((day, index) =>
-				day.date == new Date().toISOString().split("T")[0] ? (
+				day.date <= new Date().toISOString().split("T")[0] ? (
 					<DayBlock
 						day={day}
 						key={index}
