@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# S.A.A.R.I. 2024
 
-## Getting Started
+## Preface
 
-First, run the development server:
+S.A.A.R.I. 2024 was a summer camp held by the Finnish Scouts in the Vaasa Region. The camp was organised in June 2024. During the planning phase, my job was to create and promote the brand. A landing page might have been needed.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+It's certainly not my best work, but nevertheless it works, and that was the main goal. Since organising scout activities are all voluntary, it was necessary to have a small workload. As a result, the site is a puzzle of multiple different components from my earlier works from the recent years. During the official deployment, the site was running on Vercel and using a MongoDB backend, which I unfortunately didn't archive.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-Nico
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the site
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run the site, make sure you have the required dependencies installed, i.e. Node and npm. After getting the files, run ´npm install´ to install required dependencies listed in the ´pacakge.json´ file.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+After installing, run ´npm start´ to deploy the site. You can access the site at http://localhost:3000
