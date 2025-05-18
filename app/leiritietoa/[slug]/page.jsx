@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-
+export const runtime = 'edge';
 import style from "@/app/assets/styles/main.module.css";
 import ContentBlock from "@/app/components/contentBlock";
 
