@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^3.1.0",
-    "axios": "^1.8.2",
+    "axios": "^1.13.5",
     "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "mongodb": "^6.5.0",
